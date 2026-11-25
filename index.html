@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cerita untuk Mis Sulis · Selamat Hari Guru</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fff6e5;--ink:#2a1540;--card:#ffffff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#241236;--ink:#fff3dc;--card:#3a2254}}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:"Fredoka",system-ui,sans-serif;background:var(--paper);color:var(--ink);font-size:18px;line-height:1.6}
+.hand{font-family:"Caveat","Comic Sans MS",cursive}
+section{min-height:100svh;padding:72px 24px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.in{max-width:640px;width:100%}
+/* hero */
+#hero{background:linear-gradient(160deg,#ff6b4a 0%,#ffb703 35%,#4cc9f0 70%,#b388ff 100%);color:#2a1540;text-align:center}
+.book{background:#fff6e5;border-radius:10px 26px 26px 10px;padding:40px 28px 32px;box-shadow:-14px 0 0 #7b2cbf,0 24px 0 -6px rgba(42,21,64,.25);transform:rotate(-2deg);border:4px solid #2a1540}
+.book small{font-size:1.05rem;display:block}
+.name{font-size:clamp(3.4rem,17vw,6.4rem);font-weight:700;line-height:1;margin:14px 0 6px;letter-spacing:-.02em}
+.name span{display:inline-block}
+.name span:nth-child(1){color:#ef476f}.name span:nth-child(2){color:#ff9f1c}.name span:nth-child(3){color:#2ec4b6}.name span:nth-child(4){color:#118ab2}
+.name span:nth-child(6){color:#9b5de5}.name span:nth-child(7){color:#ef476f}.name span:nth-child(8){color:#06a77d}.name span:nth-child(9){color:#f77f00}.name span:nth-child(10){color:#3a86ff}
+.tag{font-size:1.9rem;color:#7b2cbf;margin:0 0 22px}
+.btn{font:600 1.05rem "Fredoka",system-ui,sans-serif;border:3px solid #2a1540;background:#ffd23f;color:#2a1540;padding:12px 26px;border-radius:999px;cursor:pointer;box-shadow:0 5px 0 #2a1540;transition:transform .12s,box-shadow .12s}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 #2a1540}
+.btn:focus-visible,input:focus-visible,textarea:focus-visible{outline:4px solid #2a1540;outline-offset:3px}
+.emo{position:absolute;font-size:3rem;animation:bob 4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-14px) rotate(8deg)}}
+/* chapters */
+.ch .in{position:relative}
+.bab{display:inline-block;background:#2a1540;color:#fff6e5;border-radius:999px;padding:2px 16px;font-size:.95rem;margin-bottom:14px}
+h2{font-size:clamp(2rem,8vw,3rem);line-height:1.1;margin:0 0 18px;font-weight:700}
+.ch p{margin:0 0 14px;max-width:34em}
+.big{font-size:clamp(5rem,26vw,8rem);line-height:1;display:block;margin-bottom:6px}
+.quote{font-size:2rem;line-height:1.2;margin-top:22px;padding:14px 18px;background:rgba(255,255,255,.55);border-radius:20px;transform:rotate(-1.5deg);display:inline-block}
+#c1{background:#ff6b4a;color:#2a1540}
+#c2{background:#4cc9f0;color:#0f2a3a}
+#c3{background:#7bd88f;color:#0f2e1a}
+#c4{background:#7c3aed;color:#fff}
+#c4 .bab{background:#ffd23f;color:#2a1540}
+#c4 .quote{background:rgba(255,255,255,.18)}
+/* finale */
+#end{background:#ffd23f;color:#2a1540;text-align:center}
+#end h2{font-size:clamp(2.4rem,11vw,4rem)}
+.wall{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin:26px 0}
+.note{width:min(100%,250px);padding:14px 16px;border-radius:6px;text-align:left;font-size:1.7rem;line-height:1.15;box-shadow:0 5px 0 rgba(42,21,64,.25)}
+.note b{display:block;font-family:"Fredoka",sans-serif;font-size:.85rem;margin-top:8px}
+.field{display:grid;gap:10px;background:#fff6e5;border:3px solid #2a1540;border-radius:22px;padding:18px;text-align:left;margin-top:10px}
+input,textarea{font:400 1rem "Fredoka",system-ui,sans-serif;padding:10px 12px;border:2px solid #2a1540;border-radius:12px;background:#fff;color:#2a1540;width:100%}
+.field label{font-weight:600;font-size:.95rem}
+footer{padding:18px;text-align:center;background:#2a1540;color:#fff6e5;font-size:.95rem}
+canvas{position:fixed;inset:0;pointer-events:none;z-index:50}
+@media (prefers-reduced-motion:reduce){.emo{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<section id="hero">
+  <span class="emo" style="top:9%;left:8%">🍎</span>
+  <span class="emo" style="top:14%;right:9%;animation-delay:-1s">✏️</span>
+  <span class="emo" style="bottom:8%;left:12%;animation-delay:-2s">🌈</span>
+  <span class="emo" style="bottom:11%;right:10%;animation-delay:-3s">⭐</span>
+  <div class="in" style="max-width:480px">
+    <div class="book" id="book">
+      <small>Sebuah buku cerita untuk guru terbaik sepanjang masa</small>
+      <div class="name hand" aria-label="Mis Sulis" id="nm"></div>
+      <p class="tag hand">Selamat Hari Guru, 25 November 2026</p>
+      <button class="btn" id="open">Buka ceritanya</button>
+    </div>
+  </div>
+</section>
+
+<section id="c1" class="ch">
+  <div class="in">
+    <span class="bab">Bab 1</span>
+    <span class="big">🎒</span>
+    <h2>Hari pertama bertemu Mis</h2>
+    <p>Dulu aku datang dengan ragu. Banyak hal terasa sulit, dan aku lebih sering diam daripada bertanya.</p>
+    <p>Lalu Mis Sulis tersenyum, menyebut namaku dengan hangat, dan tiba-tiba kelas terasa seperti tempat yang boleh kupercaya.</p>
+    <div class="quote hand">“Tidak apa-apa salah, yang penting kamu mau coba.”</div>
+  </div>
+</section>
+
+<section id="c2" class="ch">
+  <div class="in">
+    <span class="bab">Bab 2</span>
+    <span class="big">🖍️</span>
+    <h2>Papan tulis penuh warna</h2>
+    <p>Di tangan Mis, pelajaran bukan sekadar hafalan. Ada cerita, ada tawa, ada contoh yang bikin kami bilang “oh, begitu ya!”</p>
+    <p>Yang rumit jadi sederhana, yang membosankan jadi seru. Mis tahu cara membuat kami ingin belajar.</p>
+    <div class="quote hand">Kelas Mis selalu punya warna.</div>
+  </div>
+</section>
+
+<section id="c3" class="ch">
+  <div class="in">
+    <span class="bab">Bab 3</span>
+    <span class="big">🌱</span>
+    <h2>Sabar yang tak pernah habis</h2>
+    <p>Berapa kali pun kami lupa, Mis menjelaskan lagi dengan nada yang sama lembutnya. Tidak pernah membuat kami merasa bodoh.</p>
+    <p>Mis percaya pada kami saat kami belum percaya pada diri sendiri. Dari situlah kami tumbuh.</p>
+    <div class="quote hand">Terima kasih sudah tidak menyerah padaku.</div>
+  </div>
+</section>
+
+<section id="c4" class="ch">
+  <div class="in">
+    <span class="bab">Bab 4</span>
+    <span class="big">💜</span>
+    <h2>Yang tertinggal sampai sekarang</h2>
+    <p>Rumus dan tanggal mungkin ada yang terlupa. Tapi cara Mis memperlakukan orang dengan baik, itu selalu kubawa ke mana-mana.</p>
+    <p>Setiap kali aku berhasil melakukan sesuatu, ada bagian kecil dari Mis di dalamnya.</p>
+    <div class="quote hand">Guru terbaik itu bukan yang paling pintar, tapi yang paling peduli.</div>
+  </div>
+</section>
+
+<section id="end">
+  <div class="in">
+    <span class="big" style="font-size:5rem">🏆</span>
+    <h2>Terima kasih, Mis Sulis!</h2>
+    <p>Untuk setiap pelajaran, setiap nasihat, dan setiap senyum. Mis adalah guru terbaik sepanjang masa dalam hidupku.</p>
+    <button class="btn" id="party">Rayakan! 🎉</button>
+    <div class="wall" id="wall" aria-live="polite">
+      <div class="note hand" style="background:#ffadad;transform:rotate(-2deg)">Mis, aku bisa seperti sekarang karena Mis.<b>— Aku</b></div>
+    </div>
+    <div class="field">
+      <label for="who">Namamu</label>
+      <input id="who" maxlength="30" placeholder="Murid kesayangan Mis">
+      <label for="msg">Pesan untuk Mis Sulis</label>
+      <textarea id="msg" rows="3" maxlength="140" placeholder="Tulis ucapan terima kasihmu di sini"></textarea>
+      <button class="btn" id="add">Tempel di dinding</button>
+    </div>
+  </div>
+</section>
+
+<footer>Dibuat dengan sepenuh hati untuk Mis Sulis · Selamat Hari Guru Nasional 💛</footer>
+<canvas id="cv"></canvas>
+
+<script>
+(function(){
+  var nm=document.getElementById('nm');
+  "Mis Sulis".split('').forEach(function(c){var s=document.createElement('span');s.textContent=c===' '?'\u00a0':c;nm.appendChild(s)});
+  var cv=document.getElementById('cv'),cx=cv.getContext('2d'),ps=[],run=false;
+  var cols=['#ef476f','#ffd23f','#06d6a0','#118ab2','#9b5de5','#ff9f1c'];
+  function size(){cv.width=innerWidth;cv.height=innerHeight}size();addEventListener('resize',size);
+  function boom(x,y){
+    for(var i=0;i<90;i++){var a=Math.random()*Math.PI*2,v=4+Math.random()*9;
+      ps.push({x:x,y:y,vx:Math.cos(a)*v,vy:Math.sin(a)*v-5,r:4+Math.random()*6,c:cols[i%cols.length],l:110})}
+    if(!run){run=true;tick()}
+  }
+  function tick(){
+    cx.clearRect(0,0,cv.width,cv.height);
+    ps=ps.filter(function(p){p.x+=p.vx;p.y+=p.vy;p.vy+=.28;p.vx*=.99;p.l--;
+      cx.globalAlpha=Math.max(p.l/110,0);cx.fillStyle=p.c;cx.fillRect(p.x,p.y,p.r,p.r*1.6);return p.l>0});
+    if(ps.length)requestAnimationFrame(tick);else{run=false;cx.clearRect(0,0,cv.width,cv.height)}
+  }
+  var calm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function party(x,y){if(!calm)boom(x,y)}
+  document.getElementById('open').onclick=function(e){party(e.clientX,e.clientY);document.getElementById('c1').scrollIntoView()};
+  document.getElementById('book').onclick=function(e){if(e.target.tagName!=='BUTTON')party(e.clientX,e.clientY)};
+  document.getElementById('party').onclick=function(e){party(innerWidth/2,innerHeight/2);party(innerWidth/4,innerHeight/3);party(innerWidth*.75,innerHeight/3)};
+  var bg=['#ffadad','#caffbf','#9bf6ff','#bdb2ff','#ffc6ff','#fdffb6'],n=0;
+  document.getElementById('add').onclick=function(e){
+    var m=document.getElementById('msg').value.trim(),w=document.getElementById('who').value.trim()||'Seseorang yang sayang Mis';
+    if(!m){document.getElementById('msg').focus();return}
+    var d=document.createElement('div');d.className='note hand';
+    d.style.background=bg[n++%bg.length];d.style.transform='rotate('+(Math.random()*6-3).toFixed(1)+'deg)';
+    d.textContent=m;var b=document.createElement('b');b.textContent='\u2014 '+w;d.appendChild(b);
+    document.getElementById('wall').appendChild(d);
+    document.getElementById('msg').value='';party(e.clientX,e.clientY);
+  };
+})();
+</script>
+</body>
+</html>
